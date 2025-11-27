@@ -1,25 +1,37 @@
-<!-- GitHub Pages用パッケージング済み HTML -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>藤原ペンション / Fujiwara Pension</title>
+  <title>藤原ペンション / Fujiwara Pension - Ski Front & Private Onsen</title>
+  <meta name="description" content="藤原ペンションは藤原スキー場の目の前、館内貸切温泉あり。苗場や他の人気スキー場から車で約1時間、宝川温泉まで10分。和室・洋室あり。朝食は焼きたてパンと目玉焼き、コーヒー。夜は鶏鍋付き。料金は人数による。家族旅行やワーケーションに最適。 / Fujiwara Pension is located right in front of Fujiwara Ski Resort with private onsen available by time reservation. About 1 hour from popular ski resorts like Naeba, 10 minutes to Takaragawa Onsen. Japanese and Western-style rooms available. Breakfast with fresh-baked bread, eggs, coffee. Dinner includes chicken hot pot. Pricing varies by number of guests. Perfect for families and workcation travelers." />
+  <meta name="keywords" content="Fujiwara Pension, ski resort, Fujiwara Ski, Naeba, hot springs, private onsen, 温泉, スキーリゾート, guesthouse, Japan, family, workcation, 和室, 洋室" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    body { margin:0; font-family:"Hiragino Sans","Noto Sans JP",sans-serif; color:#333; background:#fafafa; }
-    header { background:url('hero.jpg') center/cover no-repeat; height:65vh; display:flex; align-items:center; justify-content:center; color:white; text-shadow:0 0 18px rgba(0,0,0,0.5);} 
-    header h1 { font-size:3.2rem; letter-spacing:2px; font-weight:600; }
-    nav { padding:1rem 2rem; background:rgba(255,255,255,0.9); position:sticky; top:0; backdrop-filter:blur(10px); border-bottom:1px solid #eee; display:flex; gap:1.5rem; }
-    nav a { text-decoration:none; color:#444; font-weight:500; transition:0.2s; }
-    nav a:hover { color:#3366dd; }
-    section { padding:4rem 1.5rem; max-width:900px; margin:auto; line-height:1.8; }
-    h2 { font-size:1.8rem; margin-bottom:1rem; }
-    .card { background:#fff; padding:2rem; border-radius:14px; box-shadow:0 4px 16px rgba(0,0,0,0.08); margin-bottom:2rem; }
-    .btn { display:inline-block; padding:0.9rem 1.8rem; background:#3366dd; color:#fff; text-decoration:none; border-radius:10px; font-weight:600; box-shadow:0 3px 10px rgba(0,0,0,0.15); }
-    footer { padding:2rem; text-align:center; background:#f1f1f1; color:#666; margin-top:3rem; }
-    form { display:grid; gap:1rem; max-width:600px; }
-    input, textarea { width:100%; padding:0.9rem; border:1px solid #ccc; border-radius:10px; font-size:1rem; background:#fff; }
-    button { padding:1rem 1.6rem; border:0; border-radius:10px; background:#3366dd; color:#fff; font-weight:600; cursor:pointer; box-shadow:0 3px 10px rgba(0,0,0,0.15); }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family:'Roboto', sans-serif; color:#333; background:#f4f7f8; }
+    header { background:linear-gradient(rgba(30,144,255,0.6), rgba(0,191,255,0.6)), url('hero.jpg') center/cover no-repeat; height:50vh; display:flex; flex-direction:column; justify-content:center; align-items:center; color:white; text-shadow:0 0 20px rgba(0,0,0,0.6);} 
+    header h1 { font-family:'Montserrat', sans-serif; font-size:2.5rem; margin-bottom:0.5rem; }
+    header p { font-size:1rem; margin-top:0; }
+    nav { display:flex; justify-content:center; gap:2rem; background:rgba(255,255,255,0.95); padding:1rem 2rem; position:sticky; top:0; backdrop-filter:blur(10px); box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    nav a { text-decoration:none; color:#333; font-weight:500; transition:0.3s; }
+    nav a:hover { color:#1e90ff; }
+    section { padding:4rem 2rem; max-width:1000px; margin:auto; }
+    h2 { font-family:'Montserrat', sans-serif; font-size:2rem; margin-bottom:1.5rem; color:#1e90ff; }
+    .card { background:#ffffff; padding:2.5rem; border-radius:20px; box-shadow:0 8px 24px rgba(30,144,255,0.1); margin-bottom:3rem; transition:0.3s; border-top:5px solid #1e90ff; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 12px 28px rgba(30,144,255,0.15); }
+    .btn { display:inline-block; padding:1rem 2rem; background:#1e90ff; color:#fff; text-decoration:none; border-radius:12px; font-weight:600; box-shadow:0 4px 12px rgba(30,144,255,0.15); transition:0.3s; }
+    .btn:hover { background:#1064b3; }
+    footer { padding:3rem 1rem; text-align:center; background:#1e90ff; color:#fff; font-size:0.9rem; }
+    form { display:grid; gap:1.2rem; max-width:600px; margin-top:1rem; }
+    input, textarea { width:100%; padding:1rem; border:1px solid #1e90ff; border-radius:12px; font-size:1rem; background:#f4f7f8; }
+    button { padding:1rem 1.8rem; border:0; border-radius:12px; background:#1e90ff; color:#fff; font-weight:600; cursor:pointer; box-shadow:0 4px 12px rgba(30,144,255,0.15); transition:0.3s; }
+    button:hover { background:#1064b3; }
+    table { width:100%; border-collapse:collapse; margin-top:1rem; }
+    th, td { border:1px solid #1e90ff; padding:0.8rem 1rem; text-align:center; }
+    th { background:#cce6ff; font-weight:600; }
+    img { border-radius:15px; max-width:100%; height:auto; }
+    @media(max-width:768px){ header h1 { font-size:2rem; } nav { flex-direction:column; gap:1rem; } }
   </style>
 </head>
 <body>
@@ -34,61 +46,74 @@
 
 <header>
   <h1>藤原ペンション / Fujiwara Pension</h1>
+  <p>藤原スキー場目の前・館内貸切温泉あり</p>
 </header>
 
 <section id="about">
   <h2>施設について / About</h2>
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80" style="width:100%; border-radius:10px; margin-bottom:1rem;" />
-    <p>静かな自然に囲まれて、心からくつろげるペンション。ファミリーにもワーケーションにもぴったり。<br />A peaceful pension surrounded by nature. Perfect for families or workcation stays.</p>
+    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80" />
+    <p>藤原スキー場の目の前、館内温泉は時間制貸切。苗場や他の人気スキー場から車で約1時間、宝川温泉まで10分。チェックイン16-18時、チェックアウト9時、キャンセル3日前まで無料。ファミリーやワーケーションに最適です。<br />Located right in front of Fujiwara Ski Resort, with private onsen by reservation. About 1 hour from Naeba and other popular ski resorts, 10 minutes to Takaragawa Onsen. Check-in 16:00–18:00, check-out 9:00, cancellation free up to 3 days before. Perfect for families and workcation travelers.</p>
   </div>
 </section>
 
 <section id="rooms">
-  <h2>お部屋 / Rooms</h2>
+  <h2>お部屋 / Rooms & Pricing</h2>
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" style="width:100%; border-radius:10px; margin-bottom:1rem;" />
-    <p>明るくて落ち着いた雰囲気の客室。和室・洋室から選べる。<br />Bright and relaxing rooms. Choose between Japanese-style or Western-style rooms.</p>
+    <h3>和室 / Japanese-style</h3>
+    <table>
+      <tr><th>人数 / Guests</th><th>平日料金 / Weekday</th><th>週末料金 / Weekend</th></tr>
+      <tr><td>1人 / 1</td><td>15,000円</td><td>18,000円</td></tr>
+      <tr><td>2人 / 2</td><td>26,000円</td><td>30,000円</td></tr>
+      <tr><td>3人 / 3</td><td>35,000円</td><td>38,000円</td></tr>
+      <tr><td>4人 / 4</td><td>40,000円</td><td>43,000円</td></tr>
+      <tr><td>5人 / 5</td><td>45,000円</td><td>48,000円</td></tr>
+    </table>
+    <h3>洋室 / Western-style</h3>
+    <table>
+      <tr><th>人数 / Guests</th><th>平日料金 / Weekday</th><th>週末料金 / Weekend</th></tr>
+      <tr><td>1人 / 1</td><td>18,000円</td><td>20,000円</td></tr>
+      <tr><td>2人 / 2</td><td>28,000円</td><td>32,000円</td></tr>
+    </table>
   </div>
 </section>
 
 <section id="meals">
-  <h2>食事オプション / Meals</h2>
+  <h2>食事 / Meals</h2>
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" style="width:100%; border-radius:10px; margin-bottom:1rem;" />
-    <p>季節の食材を使った家庭料理を提供。<br />Seasonal home-cooked meals available.</p>
-    <ul>
-      <li>朝食（固定メニュー） / Breakfast (fixed menu): ◯◯円</li>
-      <li>夕食 / Dinner: 鶏鍋 / Chicken hot pot (basic plan)</li>
-      <li>＋1,000円 / +¥1,000: 豚しゃぶ / Upgrade to pork shabu-shabu</li>
-      <li>＋2,000円 / +¥2,000: すき焼き / Upgrade to sukiyaki</li>
-    </ul>
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80" />
+    <p>朝食は焼きたてパン、ハム、目玉焼き、コーヒー。<br />Breakfast includes fresh-baked bread, ham, fried eggs, and coffee.</p>
+    <p>夕食は鶏鍋付き。夜食なしの場合は1人-1,500円。<br />Dinner includes chicken hot pot. If you skip dinner, -¥1,500 per person.</p>
   </div>
 </section>
 
 <section id="access">
   <h2>アクセス / Access</h2>
-  <p>住所：◯◯県◯◯市◯◯ / Address: ◯◯ Prefecture, ◯◯ City, ◯◯<br />
-  駐車場あり / Parking available. 最寄駅から送迎あり / Shuttle service from nearest station available.</p>
+  <div class="card">
+    <p>住所：群馬県利根郡みなかみ町藤原4979-8 / 4979-8 Fujiwara, Minakami, Tone, Gunma<br />
+    電話：8190-6523-5607 / Phone: 8190-6523-5607<br />
+    メール：fujiwarapenshion@gmail.com / Email: fujiwarapenshion@gmail.com<br />
+    駐車場あり / Parking available.<br />
+    藤原スキー場すぐ / Right in front of Fujiwara Ski Resort, 苗場・他スキー場まで約1時間 / About 1 hour to Naeba and other popular ski resorts, 宝川温泉まで10分 / 10 minutes to Takaragawa Onsen.</p>
+  </div>
 </section>
 
 <section id="reserve">
   <h2>予約・お問い合わせ / Reservation & Contact</h2>
-  <p>電話・メール・フォームで受付 / We accept reservations via phone, email, or contact form.</p>
-  <p>📞 090-0000-0000</p>
-  <p>📩 info@example.com</p>
+  <div class="card">
+    <p>電話・メールでのみ受付 / Reservations are accepted via phone or email only.</p>
+    <p>📞 8190-6523-5607</p>
+    <p>📩 fujiwarapenshion@gmail.com</p>
 
-  <h3>お問い合わせフォーム / Contact Form</h3>
-  <form action="mailto:info@example.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="お名前 / Your Name" required />
-    <input type="email" name="email" placeholder="メール / Email" required />
-    <input type="text" name="phone" placeholder="電話番号 / Phone" />
-    <textarea name="message" rows="6" placeholder="お問い合わせ内容 / Your Message" required></textarea>
-    <button type="submit">送信 / Send</button>
-  </form>
-
-  <p style="margin-top:2rem;">オンライン予約も可 / You can also book online:</p>
-  <a class="btn" href="https://www.agoda.com/sl/a5xLDHC9rtc" target="_blank">アゴダで予約 / Book on Agoda</a>
+    <h3>お問い合わせフォーム / Contact Form</h3>
+    <form action="mailto:fujiwarapenshion@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="お名前 / Your Name" required />
+      <input type="email" name="email" placeholder="メール / Email" required />
+      <input type="text" name="phone" placeholder="電話番号 / Phone" />
+      <textarea name="message" rows="6" placeholder="お問い合わせ内容 / Your Message" required></textarea>
+      <button type="submit">送信 / Send</button>
+    </form>
+  </div>
 </section>
 
 <footer>&copy; 藤原ペンション / Fujiwara Pension</footer>
