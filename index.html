@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>藤原ペンション / Fujiwara Pension - Ski Front & Private Onsen</title>
-  <meta name="description" content="藤原ペンションは藤原スキー場の目の前館内貸切温泉あり。車で15分以内に４箇所のスキー場、宝川温泉まで10分。和室・洋室あり。朝食は焼きたてパンと目玉焼き、コーヒー。夜は鶏鍋付き。家族旅行に最適。" />
-  <meta name="keywords" content="Fujiwara Pension, ski resort, Fujiwara Ski, Naeba, hot springs, private onsen, 温泉, スキーリゾート, guesthouse, Japan, family, workcation, 和室, 洋室" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; margin:0; padding:0; }
-    body { font-family:'Roboto', sans-serif; color:#333; background:#f4f7f8; }
-    header { height:45vh; display:flex; flex-direction:column; justify-content:center; align-items:center; color:white; text-shadow:0 0 20px rgba(0,0,0,0.6);}  
-    header h1 { font-family:'Montserrat', sans-serif; font-size:2.5rem; margin-bottom:0.3rem; }
-    header p { font-size:1rem; margin-top:0; }
-    nav { display:flex; justify-content:center; gap:1.5rem; background:rgba(255,255,255,0.95); padding:0.6rem 1.5rem; position:sticky; top:0; backdrop-filter:blur(10px); box-shadow:0 2px 6px rgba(0,0,0,0.1); font-size:0.9rem; }
-    nav a { text-decoration:none; color:#333; font-weight:500; transition:0.3s; }
-    nav a:hover { color:#1e90ff; }
-    section { padding:3rem 1.5rem; max-width:1000px; margin:auto; }
-    h2 { font-family:'Montserrat', sans-serif; font-size:1.8rem; margin-bottom:1.2rem; color:#1e90ff; }
-    .card { background:#ffffff; padding:2rem; border-radius:20px; box-shadow:0 8px 24px rgba(30,144,255,0.1); margin-bottom:2.5rem; transition:0.3s; border-top:5px solid #1e90ff; }
-    .card:hover { transform:translateY(-5px); box-shadow:0 12px 28px rgba(30,144,255,0.15); }
-    footer { padding:2rem 1rem; text-align:center; background:#1e90ff; color:#fff; font-size:0.8rem; }
-    form { display:grid; gap:1rem; max-width:600px; margin-top:1rem; }
-    input, textarea { width:100%; padding:1rem; border:1px solid #1e90ff; border-radius:12px; font-size:1rem; background:#f4f7f8; }
-    button { padding:1rem 1.8rem; border:0; border-radius:12px; background:#1e90ff; color:#fff; font-weight:600; cursor:pointer; box-shadow:0 4px 12px rgba(30,144,255,0.15); transition:0.3s; }
-    button:hover { background:#1064b3; }
-    table { width:100%; border-collapse:collapse; margin-top:1rem; }
-    th, td { border:1px solid #1e90ff; padding:0.8rem 1rem; text-align:center; }
-    th { background:#cce6ff; font-weight:600; }
-    img { border-radius:15px; max-width:100%; height:auto; }
-  </style>
-</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>藤原ペンション / Fujiwara Pension - Ski Front, Private Onsen, Powder Snow, Backcountry, Joshu Wagyu</title>
+<meta name="description" content="藤原ペンションは群馬県みなかみ町の日本一雪が降るスキー場の目の前。パウダースノー、バックカントリー、宝川温泉、貸切温泉、和室・洋室、家族旅行、カップル、外人少なめ。朝食は焼きたてパン、夕食は鶏鍋、超力豚しゃぶしゃぶ、極上上州Wagyuすき焼きも。Fujiwara Pension is located in front of Japan's snowiest ski resort in Gunma, Minakami. Powder snow, backcountry, Takaragawa Onsen, private onsen, tatami & western rooms, family friendly, few foreigners. Breakfast: fresh bread; Dinner: chicken hot pot, Super Pork Shabu-shabu, Premium Joshu Wagyu Sukiyaki.">
+<meta name="keywords" content="Fujiwara Pension,藤原ペンション,スキー,スキー場,日本一雪が降るスキー場,パウダースノー,バックカントリー,宝川温泉,貸切温泉,和室,洋室,家族旅行,カップル,外人少なめ,群馬県,みなかみ町,苗場,神楽,雪,冬休み,温泉宿,スキー宿,ナイター,雪質,プライベート温泉,焼きたてパン,鶏鍋,しゃぶしゃぶ,極上上州Wagyu,すき焼き,絶景,景色,スノーボード,スキー旅行,ワーケーション,冬の思い出">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="藤原ペンション / Fujiwara Pension - Ski Front & Private Onsen">
+<meta property="og:description" content="群馬県みなかみ町の日本一雪が降るスキー場の目の前、パウダースノー、バックカントリー、貸切温泉、和室・洋室。朝食・夕食・極上上州Wagyuすき焼きも。">
+<meta property="og:image" content="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg">
+<meta property="og:url" content="https://fujiwarapension.example.com">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="藤原ペンション / Fujiwara Pension - Ski Front & Private Onsen">
+<meta name="twitter:description" content="群馬県みなかみ町の日本一雪が降るスキー場の目の前、パウダースノー、バックカントリー、貸切温泉、和室・洋室。朝食・夕食・極上上州Wagyuすき焼きも。">
+<meta name="twitter:image" content="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg">
+
+<!-- Google Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "藤原ペンション / Fujiwara Pension",
+  "image": [
+    "EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg",
+    "IMG_9917.jpeg",
+    "IMG_9918.jpeg",
+    "IMG_9921.jpeg",
+    "IMG_9922.jpeg",
+    "DSC00008.jpeg",
+    "DSC00052.jpeg",
+    "DSC00063.jpeg",
+    "DSC00085.jpeg"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "4979-8 Fujiwara",
+    "addressLocality": "Minakami, Tone",
+    "addressRegion": "Gunma",
+    "postalCode": "",
+    "addressCountry": "JP"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.8890,
+    "longitude": 138.8825
+  },
+  "url": "https://fujiwarapension.example.com",
+  "telephone": "090-6523-5607",
+  "email": "fujiwarapenshion@gmail.com",
+  "description": "藤原ペンションは群馬県みなかみ町の日本一雪が降るスキー場の目の前。パウダースノー、バックカントリー、宝川温泉、貸切温泉、和室・洋室、家族旅行、カップル、外人少なめ。朝食は焼きたてパン、夕食は鶏鍋、超力豚しゃぶしゃぶ、極上上州Wagyuすき焼きも。",
+  "checkinTime": "16:00",
+  "checkoutTime": "09:00",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Private Onsen", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Powder Snow", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Backcountry", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Tatami Room", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Western Room", "value": true}
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family:'Roboto', sans-serif; color:#333; background:#f4f7f8; }
+header { position:relative; width:100%; height:45vh; overflow:hidden; display:flex; justify-content:center; align-items:center; }
+header img { width:100%; height:100%; object-fit:cover; }
+header .overlay { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.4); padding:1rem 2rem; border-radius:12px; text-align:center; color:#fff; }
+header .overlay h1 { font-family:'Montserrat',sans-serif; font-weight:700; font-size:2.5rem; margin-bottom:0.5rem; }
+header .overlay p { font-family:'Roboto',sans-serif; font-size:1rem; }
+nav { display:flex; justify-content:center; gap:1.5rem; background:rgba(255,255,255,0.95); padding:0.6rem 1.5rem; position:sticky; top:0; backdrop-filter:blur(10px); box-shadow:0 2px 6px rgba(0,0,0,0.1); font-size:0.9rem; }
+nav a { text-decoration:none; color:#333; font-weight:500; transition:0.3s; }
+nav a:hover { color:#1e90ff; }
+section { padding:3rem 1.5rem; max-width:1000px; margin:auto; }
+h2 { font-family:'Montserrat', sans-serif; font-size:1.8rem; margin-bottom:1.2rem; color:#1e90ff; }
+.card { background:#fff; padding:2rem; border-radius:20px; box-shadow:0 8px 24px rgba(30,144,255,0.1); margin-bottom:2.5rem; border-top:5px solid #1e90ff; }
+.card:hover { transform:translateY(-5px); box-shadow:0 12px 28px rgba(30,144,255,0.15); }
+footer { padding:2rem 1rem; text-align:center; background:#1e90ff; color:#fff; font-size:0.8rem; }
+form { display:grid; gap:1rem; max-width:600px; margin-top:1rem; }
+input, textarea { width:100%; padding:1rem; border:1px solid #1e90ff; border-radius:12px; font-size:1rem; background:#f4f7f8; }
+button { padding:1rem 1.8rem; border:0; border-radius:12px; background:#1e90ff; color:#fff; font-weight:600; cursor:pointer; box-shadow:0 4px 12px rgba(30,144,255,0.15); transition:0.3s; }
+button:hover { background:#1064b3; }
+table { width:100%; border-collapse:collapse; margin-top:1rem; }
+th, td { border:1px solid #1e90ff; padding:0.8rem 1rem; text-align:center; }
+th { background:#cce6ff; font-weight:600; }
+img { border-radius:15px; max-width:100%; height:auto; margin-bottom:1rem; }
+</style>
+
 <body>
 
 <nav>
@@ -40,42 +103,28 @@
   <a href="#access">アクセス / Access</a>
   <a href="#reserve">予約 / Reservation</a>
 </nav>
-  
-<header style="position:relative; width:100%; height:45vh; overflow:hidden;">
-  <img src="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg" alt="外観 / Exterior" style="width:100%; height:100%; object-fit:cover;" />
-  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
-              background:rgba(0,0,0,0.4); padding:1rem 2rem; border-radius:12px; text-align:center;">
-    <h1 style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:2.5rem; color:#fff; margin-bottom:0.5rem;">
-      藤原ペンション / Fujiwara Pension
-    </h1>
-    <p style="font-family:'Roboto',sans-serif; font-size:1rem; color:#fff;">
-      藤原スキー場目の前・館内貸切温泉あり<br />
-      Right in front of Fujiwara Ski Resort & Private Onsen
-    </p>
+
+<header>
+  <img src="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg" alt="外観 / Exterior, Japan’s snowiest ski resort, powder snow, backcountry, Takaragawa Onsen, few foreigners" title="藤原ペンション外観 / Fujiwara Pension exterior, powder snow, backcountry, private onsen, few foreigners">
+  <div class="overlay">
+    <h1>藤原ペンション / Fujiwara Pension</h1>
+    <p>藤原スキー場目の前・館内貸切温泉あり<br>Right in front of Fujiwara Ski Resort & Private Onsen</p>
   </div>
 </header>
 
 <section id="about">
   <h2>施設について / About</h2>
   <div class="card">
-    <img src="IMG_9917.jpeg" alt="サロン / Salon" class="w-full rounded-2xl shadow mb-4" />
-    <img src="IMG_9918.jpeg" alt="食堂 / Dining Room" class="w-full rounded-2xl shadow mb-4" />
+    <img src="IMG_9917.jpeg" alt="サロン / Salon, cozy lounge, powder snow, few foreigners, Japan’s snowiest ski resort">
+    <img src="IMG_9918.jpeg" alt="食堂 / Dining Room, breakfast, dinner, hot pot, powder snow, few foreigners">
     <p>
       藤原スキー場の目の前！！<br>
       館内温泉は時間制で貸切！<br>
-      近隣15分以内4つのスキー場<br>
-      苗場まで車で約1時間、宝川温泉まで10分。<br><br>
-
-      チェックイン16-18時<br>
-      チェックアウト9時<br>
-      キャンセル3日前まで無料。<br><br>
-
-      Right in front of Fujiwara Ski Resort!!<br>
-      Private Onsen available by reservation.<br>
-      Four ski resorts within 15 minutes by car.<br>
-      About 1 hour to Naeba, 10 minutes to Takaragawa Onsen.<br>
-      Check-in 16:00-18:00 / Check-out 9:00<br>
-      Free cancellation up to 3 days before.
+      近隣15分以内4つのスキー場、苗場まで車で約1時間、宝川温泉まで10分。<br>
+      パウダースノー、バックカントリー、外人少なめ、日本一雪が降るスキー場。<br><br>
+      Right in front of Fujiwara Ski Resort!! Private Onsen by reservation.<br>
+      Four ski resorts within 15 minutes by car. About 1 hour to Naeba, 10 minutes to Takaragawa Onsen.<br>
+      Powder snow, backcountry skiing, few foreigners, Japan’s snowiest ski resort.
     </p>
   </div>
 </section>
@@ -84,7 +133,7 @@
   <h2>お部屋 / Rooms & Pricing</h2>
   <div class="card">
     <h3>和室 / Japanese-style</h3>
-    <img src="IMG_9922.jpeg" alt="和室 / Japanese Room" class="w-full rounded-2xl shadow mb-4" />
+    <img src="IMG_9922.jpeg" alt="和室 / Japanese tatami room, powder snow, few foreigners, cozy stay">
     <table>
       <tr><th>人数 / Guests</th><th>平日料金 / Weekday</th><th>週末料金 / Weekend</th></tr>
       <tr><td>1人 / 1</td><td>15,000円</td><td>18,000円</td></tr>
@@ -95,7 +144,7 @@
     </table>
 
     <h3>洋室 / Western-style</h3>
-    <img src="IMG_9921.jpeg" alt="洋室 / Western Room" class="w-full rounded-2xl shadow mb-4" />
+    <img src="IMG_9921.jpeg" alt="洋室 / Western-style room, powder snow, few foreigners, cozy stay">
     <table>
       <tr><th>人数 / Guests</th><th>平日料金 / Weekday</th><th>週末料金 / Weekend</th></tr>
       <tr><td>1人 / 1</td><td>18,000円</td><td>20,000円</td></tr>
@@ -108,25 +157,21 @@
   <h2>食事 / Meals</h2>
   <div class="card">
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
-      <img src="DSC00008.jpeg" alt="食事1 / Meal 1" style="width:100%; border-radius:12px;" />
-      <img src="DSC00052.jpeg" alt="食事2 / Meal 2" style="width:100%; border-radius:12px;" />
-      <img src="DSC00063.jpeg" alt="食事3 / Meal 3" style="width:100%; border-radius:12px;" />
-      <img src="DSC00085.jpeg" alt="食事4 / Meal 4" style="width:100%; border-radius:12px;" />
+      <img src="DSC00008.jpeg" alt="朝食 / Breakfast, freshly baked bread, eggs, coffee, powder snow, few foreigners">
+      <img src="DSC00052.jpeg" alt="夕食1 / Dinner, chicken hot pot, powder snow, few foreigners">
+      <img src="DSC00063.jpeg" alt="夕食2 / Super Pork Shabu-shabu, powder snow, few foreigners">
+      <img src="DSC00085.jpeg" alt="夕食3 / Premium Joshu Wagyu Sukiyaki, powder snow, few foreigners">
     </div>
     <p style="margin-top:1rem;">
       朝食は焼きたてパン、ハム、目玉焼き、コーヒーなど。<br>
       夕食は鶏鍋付き。夜食なしは1人-1,500円。<br>
-      群馬麦豚の上を行く超力豚しゃぶしゃぶへ変更 +1,000円<br>
-      極上上州牛サーロインすき焼きへ変更 +2,000円<br><br>
-
-      Breakfast: freshly baked bread, ham, fried eggs, coffee, etc.<br>
-      Dinner includes chicken hot pot. No late-night meal: -1,500 yen per person.<br>
-      Upgrade to Super Pork Shabu-shabu +1,000 yen<br>
-      Upgrade to Premium Joshu Beef Sirloin Sukiyaki +2,000 yen
+      群馬麦豚の上を行く超力豚しゃぶしゃぶ +1,000円<br>
+      極上上州Wagyuすき焼き +2,000円<br>
+      Breakfast: freshly baked bread, ham, eggs, coffee.<br>
+      Dinner: Chicken hot pot included. Optional Super Pork Shabu-shabu +1,000 yen, Premium Joshu Wagyu Sukiyaki +2,000 yen.
     </p>
   </div>
 </section>
-
 
 <section id="access">
   <h2>アクセス / Access</h2>
@@ -135,16 +180,10 @@
       住所：群馬県利根郡みなかみ町藤原4979-8<br>
       Phone: 090-6523-5607<br>
       Email: fujiwarapenshion@gmail.com<br>
-      駐車場あり<br>
-      藤原スキー場すぐ<br>
-      苗場・神楽スキー場まで約1時間<br>
-      宝川温泉まで10分<br><br>
-
-      Address: 4979-8 Fujiwara, Minakami, Tone, Gunma<br>
-      Parking available<br>
-      Right in front of Fujiwara Ski Resort<br>
-      About 1 hour to Naeba & Kagura Ski Resort<br>
-      10 minutes to Takaragawa Onsen
+      駐車場あり / Parking available.<br>
+      藤原スキー場すぐ / Right in front of Fujiwara Ski Resort.<br>
+      苗場・神楽スキー場まで約1時間 / About 1 hour to Naeba and Kagura.<br>
+      宝川温泉まで10分 / 10 minutes to Takaragawa Onsen.
     </p>
   </div>
 </section>
@@ -152,14 +191,13 @@
 <section id="reserve">
   <h2>予約・お問い合わせ / Reservation & Contact</h2>
   <div class="card">
-    <p>電話・メールで受付中！！ / Reservations by phone or email</p>
+    <p>電話・メールで受付中！！ / Contact us by phone or email</p>
     <p>📞 090-6523-5607</p>
     <p>📩 fujiwarapenshion@gmail.com</p>
-
     <form action="mailto:fujiwarapenshion@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="お名前 / Name" required />
-      <input type="email" name="email" placeholder="メール / Email" required />
-      <input type="text" name="phone" placeholder="電話番号 / Phone" />
+      <input type="text" name="name" placeholder="お名前 / Name" required>
+      <input type="email" name="email" placeholder="メール / Email" required>
+      <input type="text" name="phone" placeholder="電話番号 / Phone">
       <textarea name="message" rows="6" placeholder="お問い合わせ内容 / Message" required></textarea>
       <button type="submit">送信 / Send</button>
     </form>
