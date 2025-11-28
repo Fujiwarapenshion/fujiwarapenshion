@@ -10,9 +10,9 @@
   <style>
     * { box-sizing: border-box; margin:0; padding:0; }
     body { font-family:'Roboto', sans-serif; color:#333; background:#f4f7f8; }
-    header { background:linear-gradient(rgba(30,144,255,0.6), rgba(0,191,255,0.6)), url('3CE62AE3-6623-425E-A332-22F76071CE6F.jpeg') center/cover no-repeat; height:45vh; display:flex; flex-direction:column; justify-content:center; align-items:center; color:white; text-shadow:0 0 20px rgba(0,0,0,0.6);}  
-    header h1 { font-family:'Montserrat', sans-serif; font-size:2.2rem; margin-bottom:0.3rem; }
-    header p { font-size:0.9rem; margin-top:0; }
+    header { height:45vh; display:flex; flex-direction:column; justify-content:center; align-items:center; color:white; text-shadow:0 0 20px rgba(0,0,0,0.6);}  
+    header h1 { font-family:'Montserrat', sans-serif; font-size:2.5rem; margin-bottom:0.3rem; }
+    header p { font-size:1rem; margin-top:0; }
     nav { display:flex; justify-content:center; gap:1.5rem; background:rgba(255,255,255,0.95); padding:0.6rem 1.5rem; position:sticky; top:0; backdrop-filter:blur(10px); box-shadow:0 2px 6px rgba(0,0,0,0.1); font-size:0.9rem; }
     nav a { text-decoration:none; color:#333; font-weight:500; transition:0.3s; }
     nav a:hover { color:#1e90ff; }
@@ -42,19 +42,15 @@
 </nav>
   
 <header style="position:relative; width:100%; height:45vh; overflow:hidden;">
-  <!-- 外観画像 -->
-  <img src="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg" 
-       alt="外観" 
-       style="width:100%; height:100%; object-fit:cover;" />
-
-  <!-- 文字を重ねる -->
+  <img src="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg" alt="外観 / Exterior" style="width:100%; height:100%; object-fit:cover;" />
   <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
               background:rgba(0,0,0,0.4); padding:1rem 2rem; border-radius:12px; text-align:center;">
     <h1 style="font-family:'Montserrat',sans-serif; font-weight:700; font-size:2.5rem; color:#fff; margin-bottom:0.5rem;">
       藤原ペンション / Fujiwara Pension
     </h1>
     <p style="font-family:'Roboto',sans-serif; font-size:1rem; color:#fff;">
-      藤原スキー場目の前・館内貸切温泉あり
+      藤原スキー場目の前・館内貸切温泉あり<br />
+      Right in front of Fujiwara Ski Resort & Private Onsen
     </p>
   </div>
 </header>
@@ -62,17 +58,17 @@
 <section id="about">
   <h2>施設について / About</h2>
   <div class="card">
-    <!-- サロンと食堂画像のみ -->
-    <img src="IMG_9917.jpeg" alt="サロン" class="w-full rounded-2xl shadow mb-4" />
-    <img src="IMG_9918.jpeg" alt="食堂" class="w-full rounded-2xl shadow mb-4" />
+    <img src="IMG_9917.jpeg" alt="サロン / Salon" class="w-full rounded-2xl shadow mb-4" />
+    <img src="IMG_9918.jpeg" alt="食堂 / Dining Room" class="w-full rounded-2xl shadow mb-4" />
     <p>藤原スキー場の目の前！！<br />
       館内温泉は時間制で貸切！<br />
       近隣15分以内4つのスキー場<br />
       苗場まで車で約1時間、宝川温泉まで10分。<br /><br />
 
-      チェックイン16-18時<br />
-チェックアウト9時<br />
-キャンセル3日前まで無料。</p>
+      チェックイン16-18時 / Check-in 16:00-18:00<br />
+      チェックアウト9時 / Check-out 9:00<br />
+      キャンセル3日前まで無料 / Free cancellation up to 3 days before
+    </p>
   </div>
 </section>
 
@@ -80,8 +76,7 @@
   <h2>お部屋 / Rooms & Pricing</h2>
   <div class="card">
     <h3>和室 / Japanese-style</h3>
-    <!-- 和室画像 -->
-    <img src="IMG_9922.jpeg" alt="和室" class="w-full rounded-2xl shadow mb-4" />
+    <img src="IMG_9922.jpeg" alt="和室 / Japanese Room" class="w-full rounded-2xl shadow mb-4" />
     <table>
       <tr><th>人数 / Guests</th><th>平日料金 / Weekday</th><th>週末料金 / Weekend</th></tr>
       <tr><td>1人 / 1</td><td>15,000円</td><td>18,000円</td></tr>
@@ -92,8 +87,7 @@
     </table>
 
     <h3>洋室 / Western-style</h3>
-    <!-- 洋室画像 -->
-    <img src="IMG_9921.jpeg" alt="洋室" class="w-full rounded-2xl shadow mb-4" />
+    <img src="IMG_9921.jpeg" alt="洋室 / Western Room" class="w-full rounded-2xl shadow mb-4" />
     <table>
       <tr><th>人数 / Guests</th><th>平日料金 / Weekday</th><th>週末料金 / Weekend</th></tr>
       <tr><td>1人 / 1</td><td>18,000円</td><td>20,000円</td></tr>
@@ -106,17 +100,18 @@
   <h2>食事 / Meals</h2>
   <div class="card">
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem;">
-      <img src="DSC00008.jpeg" alt="食事1" style="width:100%; border-radius:12px;" />
-      <img src="DSC00052.jpeg" alt="食事2" style="width:100%; border-radius:12px;" />
-      <img src="DSC00063.jpeg" alt="食事3" style="width:100%; border-radius:12px;" />
-      <img src="DSC00085.jpeg" alt="食事4" style="width:100%; border-radius:12px;" />
+      <img src="DSC00008.jpeg" alt="食事1 / Meal 1" style="width:100%; border-radius:12px;" />
+      <img src="DSC00052.jpeg" alt="食事2 / Meal 2" style="width:100%; border-radius:12px;" />
+      <img src="DSC00063.jpeg" alt="食事3 / Meal 3" style="width:100%; border-radius:12px;" />
+      <img src="DSC00085.jpeg" alt="食事4 / Meal 4" style="width:100%; border-radius:12px;" />
     </div>
     <p style="margin-top:1rem;">
       朝食は焼きたてパン、ハム、目玉焼き、コーヒーなど。<br />
-      夕食は鶏鍋付き。<br />
-      夜食なしは1人-1,500円。<br />
-      群馬麦豚の上を行く超力豚しゃぶしゃぶへ変更 +1,000円<br />
-      極上上州牛サーロインすき焼きへ変更 +2,000円
+      Breakfast: freshly baked bread, ham, fried eggs, coffee, etc.<br />
+      夕食は鶏鍋付き / Dinner includes chicken hot pot.<br />
+      夜食なしは1人-1,500円 / No late-night meal: -1,500 yen per person.<br />
+      群馬麦豚の上を行く超力豚しゃぶしゃぶへ変更 +1,000円 / Upgrade to Super Pork Shabu-shabu +1,000 yen<br />
+      極上上州牛サーロインすき焼きへ変更 +2,000円 / Upgrade to Premium Joshu Beef Sirloin Sukiyaki +2,000 yen
     </p>
   </div>
 </section>
@@ -124,23 +119,31 @@
 <section id="access">
   <h2>アクセス / Access</h2>
   <div class="card">
-    <p>住所：群馬県利根郡みなかみ町藤原4979-8<br />Phone: 090-6523-5607<br />Email: fujiwarapenshion@gmail.com<br />駐車場あり / Parking available.<br />藤原スキー場すぐ / Right in front of Fujiwara Ski Resort.<br />苗場・神楽スキー場まで約1時間 / About 1 hour to Naeba and Kagura.<br />宝川温泉まで10分 / 10 minutes to Takaragawa Onsen.</p>
+    <p>
+      住所：群馬県利根郡みなかみ町藤原4979-8 / Address: 4979-8 Fujiwara, Minakami, Tone, Gunma<br />
+      Phone: 090-6523-5607<br />
+      Email: fujiwarapenshion@gmail.com<br />
+      駐車場あり / Parking available.<br />
+      藤原スキー場すぐ / Right in front of Fujiwara Ski Resort.<br />
+      苗場・神楽スキー場まで約1時間 / About 1 hour to Naeba & Kagura Ski Resort.<br />
+      宝川温泉まで10分 / 10 minutes to Takaragawa Onsen.
+    </p>
   </div>
 </section>
 
 <section id="reserve">
   <h2>予約・お問い合わせ / Reservation & Contact</h2>
   <div class="card">
-    <p>電話・メールで受付中！！</p>
+    <p>電話・メールで受付中！！ / Reservations by phone or email</p>
     <p>📞 090-6523-5607</p>
     <p>📩 fujiwarapenshion@gmail.com</p>
 
     <form action="mailto:fujiwarapenshion@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="お名前" required />
-      <input type="email" name="email" placeholder="メール" required />
-      <input type="text" name="phone" placeholder="電話番号" />
-      <textarea name="message" rows="6" placeholder="お問い合わせ内容" required></textarea>
-      <button type="submit">送信</button>
+      <input type="text" name="name" placeholder="お名前 / Name" required />
+      <input type="email" name="email" placeholder="メール / Email" required />
+      <input type="text" name="phone" placeholder="電話番号 / Phone" />
+      <textarea name="message" rows="6" placeholder="お問い合わせ内容 / Message" required></textarea>
+      <button type="submit">送信 / Send</button>
     </form>
   </div>
 </section>
