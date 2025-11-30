@@ -114,43 +114,44 @@ img { border-radius:15px; max-width:100%; height:auto; margin-bottom:1rem; }
 </header>
 
 <style>
-/* Enhanced overlay styling */
+/* 強制的に上書きされるよう !important 付きで再定義 */
 .refined-overlay {
-  background: rgba(0,0,0,0.18);
-  padding: 1rem 1.4rem;
-  border-radius: 14px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
-  max-width: 55%;
-  margin:auto;
+  background: rgba(0,0,0,0.18) !important;
+  padding: 0.8rem 1rem !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.2) !important;
+  max-width: 48% !important;
+  margin: auto !important;
 }
 .refined-overlay h1 {
-  font-weight: 600;
-  font-size: 1.8rem;
-  letter-spacing: 0.5px;
-  line-height: 1.3;
-  margin-bottom: 0.4rem;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+  font-weight: 600 !important;
+  font-size: 1.6rem !important;
+  line-height: 1.25 !important;
+  margin-bottom: 0.3rem !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
 }
 .refined-overlay p {
-  font-size: 0.85rem;
-  line-height: 1.35;
-  opacity: 0.9;
+  font-size: 0.78rem !important;
+  line-height: 1.3 !important;
+  opacity: 0.88 !important;
 }
 
 @media (max-width: 600px) {
   .refined-overlay {
-    padding: 1.2rem 1.6rem;
+    max-width: 70% !important;
+    padding: 0.7rem 1rem !important;
   }
   .refined-overlay h1 {
-    font-size: 1.9rem;
+    font-size: 1.4rem !important;
   }
   .refined-overlay p {
-    font-size: 0.9rem;
+    font-size: 0.75rem !important;
   }
 }
 </style>
+
 
 
 
