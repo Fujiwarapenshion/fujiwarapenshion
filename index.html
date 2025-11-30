@@ -104,13 +104,51 @@ img { border-radius:15px; max-width:100%; height:auto; margin-bottom:1rem; }
   <a href="#reserve">予約 / Reservation</a>
 </nav>
 
+<!-- Updated header section with improved typography, balance, transparency, and elegance -->
 <header>
-  <img src="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg" alt="外観 / Exterior, Japan’s snowiest town Minakami!, powder snow, backcountry, Takaragawa Onsen, few foreigners" title="藤原ペンション外観 / Fujiwara Pension exterior, powder snow, backcountry, private onsen, few foreigners">
-  <div class="overlay">
+  <img src="EC23D6E7-4492-4BAB-B234-83B4730CA013.jpeg" alt="外観 / Exterior">
+  <div class="overlay refined-overlay">
     <h1>藤原ペンション / Fujiwara Pension</h1>
     <p>藤原スキー場目の前・館内貸切温泉あり<br>Right in front of Fujiwara Ski Resort & Private Onsen</p>
   </div>
 </header>
+
+<style>
+/* Enhanced overlay styling */
+.refined-overlay {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 1.8rem 2.6rem;
+  border-radius: 18px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  max-width: 80%;
+}
+.refined-overlay h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.7rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.refined-overlay p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+@media (max-width: 600px) {
+  .refined-overlay {
+    padding: 1.2rem 1.6rem;
+  }
+  .refined-overlay h1 {
+    font-size: 1.9rem;
+  }
+  .refined-overlay p {
+    font-size: 0.9rem;
+  }
+}
+</style>
 
 <section id="about">
   <h2>施設について / About</h2>
